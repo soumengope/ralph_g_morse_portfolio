@@ -1,0 +1,83 @@
+.mainHeader{display:flex;justify-content:space-between;margin-top:15px;}
+.leftHeader{display:flex;font-size:25px;font-weight:700;margin-left:2%;
+    width:50%;}
+.rightHeader{display:flex;font-size:20px;margin-right:5%;gap:20px;cursor:pointer;}
+.leftLogo{background:blue;width:25px;height:25px;border-radius:50%;}
+
+.mainHeaderMob{display:none;}
+.rightHeaderNewMob{display:none;}
+.rightHeaderNewMobHide{display:none;}
+
+.mainSection{display:grid;grid-template-columns:repeat(2,1fr);margin-top:150px;
+    margin-bottom:130px;}
+.leftSection{display:flex;justify-content: right;margin-right:60px;}
+.leftImage{width:300px;height:300px;border-radius:50%;background:rgb(155, 153, 153);overflow:hidden;}
+
+.rightHello{font-size:80px;font-weight:600;margin-bottom:25px;}
+.rightText{font-size:20px;font-weight:600;margin-bottom:10px;}
+.rightPara{width:60%;margin-bottom:20px;}
+.rightDiv{display:flex;gap:20px;}
+.rightDivs1,.rightDivs2,.rightDivs3{width:140px;height:140px;border-radius:50%;font-size:20px;
+font-weight:600;cursor:pointer;border:1px solid rgb(46, 45, 45);}
+.rightDivs1{background:rgb(206, 189, 41);}
+.rightDivs2{background:rgb(214, 49, 49);}
+.rightDivs3{background:rgb(34, 134, 192);}
+.rightResume,.rightProject,.rightContact{text-align:center;margin-top:40%;}
+
+.footerSection{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid black;
+padding-top:40px;padding-bottom:40px;}
+.footerSection,.footerMainEmail,.footerMainFollow,.footerMainCopyright{padding-left:50px;}
+.footerPhoneHeader,.footerEmailHeader,.footerFollowHeader{font-size:20px;font-weight:600;
+margin-bottom:5px;}
+.footerFollowLogo{display:flex;gap:5px;}
+.footerCopyright{margin-bottom:5px;}
+
+@media screen and (max-width:900px) and (min-width:100px){
+    .mainHeader{display:none;}
+
+    .mainHeaderMob{display:flex;width:100%;justify-content:space-between;margin-top:15px;}
+    .leftHeaderMob{display:flex;font-size:25px;font-weight:700;margin-left:2%;
+        width:100%;}
+    .rightHeaderMob{display:flex;font-size:20px;margin-right:5%;gap:20px;}
+    .leftLogo{background:blue;width:25px;height:25px;border-radius:50%;}
+
+    .ShowSpanMob{width:40px;height:40px;cursor:pointer;}
+    .HideShowSpanMob{display:none;}
+    .ShowDiv{width:100%;height:5px;background:black;margin-top:5px;border-radius:10px;}
+
+    .HideSpanMob{width:40px;height:40px;padding-left:5px;cursor:pointer;}
+    .ShowHideSpanMob{display:none;}
+    .HideDiv1{width:100%;height:5px;background:black;position:relative;top:10px;
+        rotate:45deg;border-radius:10px;}
+    .HideDiv2{width:100%;height:5px;background:black;position:relative;top:5px;
+        rotate:-45deg;border-radius:10px;}
+    
+    .rightHeaderNewMobHide{display:none;}
+    .rightHeaderNewMob{display:block;padding-left:20px;width:100%;height:150px;
+    font-size:22px;background:rgb(155, 153, 153)}
+    .newresume{margin-top:15px;margin-bottom:15px;padding-top:25px;cursor:pointer;}
+    .newproject{margin-bottom:15px;cursor:pointer;}
+    .newcontact{margin-bottom:15px;cursor:pointer;}
+
+    .mainSection{grid-template-columns:repeat(1,1fr);margin-bottom:50px;margin-top:50px;}
+    .leftSection{display:flex;justify-content:center;margin-right:0px;}
+    .leftImage{width:300px;height:300px;border-radius:50%;margin-bottom:30px;}
+
+    .rightHello{font-size:40px;font-weight:600;margin-bottom:25px;margin-left:20px;}
+    .rightText{font-size:20px;font-weight:600;margin-bottom:10px;margin-left:20px;}
+    .rightPara{width:80%;margin-bottom:20px;margin-left:20px;}
+    .rightDiv{display:flex;gap:20px;justify-content: center;}
+    .rightDivs1,.rightDivs2,.rightDivs3{width:100px;height:100px;border-radius:50%;font-size:20px;
+    font-weight:600;cursor:pointer;border:1px solid rgb(46, 45, 45);}
+    .rightDivs1{background:rgb(230, 230, 8);}
+    .rightDivs2{background:rgb(224, 11, 11);}
+    .rightDivs3{background:rgb(7, 7, 226);}
+    .rightResume,.rightProject,.rightContact{text-align:center;margin-top:40%;}
+
+    .footerSection{grid-template-columns:repeat(1,1fr);
+        padding-top:10px;padding-bottom:40px;}
+    .footerPhone,.footerMainEmail,.footerMainFollow,.footerMainCopyright{padding-left:0px;
+    padding-top:20px;}
+    .footerFollowLogo{display:flex;gap:5px;}
+    .footerCopyright{margin-bottom:5px;}
+}
